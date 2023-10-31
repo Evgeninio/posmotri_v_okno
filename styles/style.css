@@ -98,7 +98,7 @@ ol {
   flex-direction: column;
   gap: 16px;
 }
-/* Стили для search__form */
+
 .search-form {
   display: flex;
   flex-direction: row;
@@ -192,9 +192,6 @@ fieldset {
   text-decoration: underline;
 }
 
-/* Конец стилей для search__form */
-
-/* Стили для content__list */
 .content__list {
   display: flex;
   position: relative;
@@ -236,7 +233,7 @@ fieldset {
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94%; /* 70.5px */
+  line-height: 94%;
   text-transform: uppercase;
 }
 
@@ -280,7 +277,7 @@ fieldset {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 30px */
+  line-height: 100%;
   text-transform: uppercase;
 }
 
@@ -299,10 +296,6 @@ fieldset {
   min-height: 34px;
 }
 
-/* Конец стилей для content__list */
-
-
-/* Стили для result_video */
 .result__video-container {
   position: relative;
   width: 711px;
@@ -311,5 +304,3 @@ fieldset {
 .result__video {
   width: 100%;
 }
-
-/* Конец стилей для result_video */
