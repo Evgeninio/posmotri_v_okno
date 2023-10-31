@@ -9,7 +9,10 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
+  display: flex;
+  align-items: flex-end;
+  max-width: 1200px;
+  max-height: 800px;
   block-size: 100%;
   margin: auto;
   color: #fff;
