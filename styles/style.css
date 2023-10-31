@@ -12,7 +12,6 @@ html {
   display: flex;
   align-items: flex-end;
   max-width: 1200px;
-  max-height: 800px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -21,7 +20,8 @@ html {
   background-color: #1b1919;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 266px;
+  padding-top: 133px;
+  padding-bottom: 133px;
 }
 
 h1,
