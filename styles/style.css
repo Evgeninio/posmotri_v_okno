@@ -10,16 +10,14 @@ html {
 
 .page {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
-  max-width: 1200px;
-  max-height: 800px;
   block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  padding-top: 266px;
 }
 
 h1,
@@ -87,13 +85,16 @@ ol {
   outline-offset: 1px;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .content {
   display: flex;
   justify-content: center;
-  gap: 30px;
   align-items: flex-end;
-  max-width: 1140px;
-  min-height: 534px;
+  gap: 30px;
+  padding: 133px 30px;
 }
 
 .result {
@@ -106,6 +107,7 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 5px;
 }
 
 .search-form__fieldset-title {
@@ -115,6 +117,7 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 5px;
 }
 
 fieldset {
@@ -156,6 +159,10 @@ fieldset {
   flex-direction: row;
   align-items: center;
   column-gap: 15px;
+}
+
+.search-form__pseudo-checkbox:hover {
+  outline: 1px;
 }
 
 .search-form__submit-button {
@@ -201,18 +208,17 @@ fieldset {
   height: 298px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__details {
   width: 100%;
+  gap: 26px;
 }
 
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
-
 
 .content__video-card {
   display: flex;
@@ -222,6 +228,7 @@ fieldset {
 }
 
 .content__video-card-thumbnail {
+  object-fit: contain;
   width: 194px;
   height: 103px;
 }
@@ -238,6 +245,7 @@ fieldset {
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
+  margin-bottom: 26px;
 }
 
 .content__accent:first-child{
