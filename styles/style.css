@@ -67,6 +67,7 @@ ol {
   line-height: normal;
   background: transparent;
   border: 1px solid white;
+  min-height: 34px;
 }
 
 .button:hover {
@@ -80,13 +81,13 @@ ol {
   text-decoration: none;
 }
 
-.button:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
+.button:focus {
+  outline: 0;
 }
 
-.button:focus {
-  outline: none;
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .content {
@@ -161,13 +162,8 @@ fieldset {
   column-gap: 15px;
 }
 
-.search-form__pseudo-checkbox:hover {
-  outline: 1px;
-}
-
 .search-form__submit-button {
   min-width: 194px;
-  min-height: 34px;
   align-self: flex-end;
 }
 
@@ -198,14 +194,16 @@ fieldset {
   outline-offset: 1px;
 }
 
-.search-form__label-text:hover {
-  text-decoration: underline;
+.search-form__checkbox-list .search-form__label:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
 }
 
 .content__list {
   display: flex;
   position: relative;
-  height: 298px;
+  min-width: 399px;
+  block-size: 298px;
   flex-direction: column;
   align-items: flex-start;
   overflow-y: auto;
@@ -304,7 +302,6 @@ fieldset {
 
 .more-button {
   min-width: 399px;
-  min-height: 34px;
 }
 
 .result__video-container {
